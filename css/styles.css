@@ -1,0 +1,15 @@
+body {
+  font-family: font-family: 'Barlow', sans-serif;
+  padding-left: 5rem;
+}
+
+h1 {
+  font-family: 'Kristi', cursive;
+  font-size: 7rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.home-container {
+  background-color: #ffe8df;
+}
