@@ -1,6 +1,7 @@
 body {
+  color: #2f2519;
   font-family: font-family: 'Barlow', sans-serif;
-  padding-left: 5rem;
+
 }
 
 h1 {
@@ -10,6 +11,50 @@ h1 {
   text-align: center;
 }
 
-.home-container {
-  background-color: #ffe8df;
+h2 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  width: 25rem;
+}
+section, footer {
+  padding: 7% 15%;
+  text-align: left;
+}
+
+#home-container {
+  padding-top: 0;
+}
+
+.profile-picture {
+  position: absolute;
+  right: 20%;
+  top: 45%;
+}
+
+#hello-container{
+  /* background-color: #fcbf1e; */
+  animation-name: colorchange;
+  animation-duration: 4s;
+}
+
+@keyframes colorchange{
+  from {background-color:#fcbf1e; }
+  to { background-color: #ffffff;}
+}
+#skill-languages-container {
+}
+
+#contact-container {
+  background-color: #fbe6d4;
+
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
 }
