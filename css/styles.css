@@ -1,60 +1,30 @@
 body {
-  color: #2f2519;
-  font-family: font-family: 'Barlow', sans-serif;
-
-}
-
-h1 {
-  font-family: 'Kristi', cursive;
-  font-size: 7rem;
-  padding-top: 5rem;
-  text-align: center;
-}
-
-h2 {
-  font-size: 4rem;
-  font-weight: 800;
-}
-
-p {
-  font-size: 1.5rem;
-  padding: 2rem 0;
-  width: 25rem;
-}
-section, footer {
-  padding: 7% 15%;
-  text-align: left;
-}
-
-#home-container {
+  padding:3%;
   padding-top: 0;
 }
 
-.profile-picture {
+h1 {
+  padding: 15%;
+}
+
+a {
+padding-left: 10px;
+}
+
+.vertical-menu {
+  background-color: blue;
+  height: 100%;
+}
+
+.home-container {
+  text-align: center;
+}
+
+.copyright {
+  padding-top: 2%;
+  font-size: 0.75rem;
+}
+
+.navbar {
   position: absolute;
-  right: 20%;
-  top: 45%;
-}
-
-#hello-container{
-  /* background-color: #fcbf1e; */
-  animation-name: colorchange;
-  animation-duration: 4s;
-}
-
-@keyframes colorchange{
-  from {background-color:#fcbf1e; }
-  to { background-color: #ffffff;}
-}
-#skill-languages-container {
-}
-
-#contact-container {
-  background-color: #fbe6d4;
-
-}
-
-@keyframes mymove {
-  from {top: 0px;}
-  to {top: 200px;}
 }
