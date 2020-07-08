@@ -1,20 +1,44 @@
+html {
+  height: 100%;
+}
 body {
-  padding:3%;
-  padding-top: 0;
+  background-color: #d64161;
+  font-family:'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 100%;
 }
 
 h1 {
-  padding: 15%;
+  color:#ff7b25;
+  padding: 20%;
+  font-family: 'Notable', sans-serif;
+  font-size: 2.5rem;
 }
 
 a {
+padding-top: 20px;
 padding-left: 10px;
+color: #383e56;
 }
 
-.vertical-menu {
-  background-color: blue;
+
+#home, .container-fluid, .row {
   height: 100%;
 }
+
+.about-me {
+  text-align: center;
+  background-color: #feb236;
+  height: 100%;
+
+}
+
+.skills {
+  background-color: #6b5b95;
+  height: 100%;
+}
+
 
 .home-container {
   text-align: center;
@@ -22,7 +46,7 @@ padding-left: 10px;
 
 .copyright {
   padding-top: 2%;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .navbar {
