@@ -1,0 +1,135 @@
+body {
+  background-color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6rem;
+  letter-spacing: 10px;
+}
+
+
+a {
+  text-align: center;
+  color: #e42c64;
+}
+
+#home {
+  padding: 2% 2% 0 2%;
+  height: calc(100% - 20px);
+  position: absolute;
+  width: 100%;
+
+}
+.home-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  color: #fbc1bc;
+  font-family: 'Staatliches', cursive;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+}
+
+nav ul {
+  margin:0;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+nav li.selected {
+  background-color: #f7c5a8;
+}
+
+.content {
+    height: calc(100% - 40px);
+    padding: 50px;
+}
+
+.content:not(.selected) {
+  display: none;
+}
+
+.content.not-main {
+  background-color: #f7c5a8;
+}
+
+@media (max-width: 600px) {
+  ul.rainbow {
+    font-size: 4.5rem;
+  }
+}
+
+/* Animation start */
+
+@keyframes rainbow {
+  0%  {top: 0;}
+  20%  {top:-2rem;}
+  60%  {top:2rem;}
+  80%  {top:0;}
+}
+
+ul.rainbow {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6rem;
+  letter-spacing: 10px;
+}
+
+ul.rainbow li {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    cursor: default;
+}
+
+ul.rainbow li:nth-child(1){
+    position:relative;
+}
+
+ul.rainbow:hover li {
+    animation: rainbow 2s ease-in-out;
+}
+
+ul.rainbow li:nth-child(1) {
+    animation-delay: 0ms;
+    color: #64DD17;
+}
+
+ul.rainbow li:nth-child(2) {
+    animation-delay: 50ms;
+    color: #0336ff;
+}
+
+ul.rainbow li:nth-child(3) {
+    animation-delay: 100ms;
+    color: #ffde03;
+}
+
+ul.rainbow li:nth-child(4) {
+    animation-delay: 150ms;
+    color: #ff0266;
+}
+
+ul.rainbow li:nth-child(5) {
+    animation: none;
+}
+
+/* Animation end */
