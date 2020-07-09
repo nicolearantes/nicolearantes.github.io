@@ -1,54 +1,75 @@
-html {
-  height: 100%;
-}
 body {
-  background-color: #d64161;
-  font-family:'Open Sans Condensed', sans-serif;
-  font-weight: bold;
+  background-color: white;
+  font-family: 'Staatliches', cursive;
   font-size: 1.5rem;
-  height: 100%;
 }
 
 h1 {
-  color:#ff7b25;
-  padding: 20%;
-  font-family: 'Notable', sans-serif;
-  font-size: 2.5rem;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6rem;
+  letter-spacing: 10px;
 }
+
 
 a {
-padding-top: 20px;
-padding-left: 10px;
-color: #383e56;
-}
-
-
-#home, .container-fluid, .row {
-  height: 100%;
-}
-
-.about-me {
   text-align: center;
-  background-color: #feb236;
-  height: 100%;
-
+  color: #e42c64;
 }
 
-.skills {
-  background-color: #6b5b95;
-  height: 100%;
+#home {
+  padding: 2% 2% 0 2%;
+  height: calc(100% - 20px);
+  position: absolute;
+  width: 100%;
+
 }
-
-
 .home-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {
-  padding-top: 2%;
+  color: #fbc1bc;
+  font-family: 'Staatliches', cursive;
+  margin: 0;
   font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
 }
 
-.navbar {
-  position: absolute;
+nav ul {
+  margin:0;
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+nav li.selected {
+  background-color: #f7c5a8;
+}
+
+.content {
+    height: calc(100% - 40px);
+    padding: 50px;
+}
+
+.content:not(.selected) {
+  display: none;
+}
+
+.content.not-main {
+  background-color: #f7c5a8;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }

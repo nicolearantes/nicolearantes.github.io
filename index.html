@@ -16,62 +16,60 @@
   <script src="https://kit.fontawesome.com/a5fd40ec0e.js" crossorigin="anonymous"></script>
 
   <!-- GoogleFonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Notable&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&family=Julius+Sans+One&family=Rock+Salt&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&family=Rock+Salt&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,500;1,300&family=Julius+Sans+One&family=Rock+Salt&family=Staatliches&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+  <section id="home" onclick="location.href='#'">
 
-  <section id="home">
+    <nav>
+      <ul>
+        <li id="skills-button" onclick="event.stopPropagation()" ><a  href="#skills"> Skills </a></li>
 
+        <li id="aboutMe-button" onclick="event.stopPropagation()"><a  href="#aboutMe">About Me</a></li>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-1 skills">
-          <a href="#">Skills</a>
-          <!-- TODO write my skills in this section -->
-          <!-- <ul>
-             <li>HTML</li>
-             <li>CSS</li>
-             <li>Bootstrap</li>
-             <li>JavaScript</li>
-             <ul> -->
-        </div>
+        <li id="contact-button" onclick="event.stopPropagation()"><a  href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-        <div class="col-sm-1 about-me">
-          <a href="#">About me</a>
-          <!-- TODO write this text in this section  -->
-          <!-- <h2>Web designer in progress</h2>
-           <p>
-             I'm a brazilian student of Web Designer located in Hamburg - Germany.
-             I speak brazilian portuguese, english and B1 level of german.
-             I love to dance, handcraft and arts.
-           </p> -->
-        </div>
+    <div class="content selected home-container" id="main">
+      <h1>Nicole Arantes</h1>
+    </div>
 
-
-        <div class="col home-container">
-          <h1>Nicole Arantes</h1>
-          <!-- <img src="img/nicolea(2).jpg" alt=""> -->
-
-          <footer>
-            <!-- <i class="far fa-envelope"></i> TODO use in small sizes -->
-            <a href="#">Linkedin </a>
-
-            <!-- <i class="fab fa-linkedin-in"></i> TODO use in small sizes -->
-            <a href="#"> GitHub</a>
-
-            <p class="copyright">Made with ♡ by ©Nicole Arantes</p>
-          </footer>
-        </div>
-
-      </div>
-
+    <div class="content not-main" id="skills">
+      <h2>Skills</h2>
+      <p>
+                I'm a brazilian student of Web Designer located in Hamburg - Germany.
+                I speak brazilian portuguese, english and B1 level of german.
+                I love to dance, handcraft and arts.
+         </p>
 
     </div>
 
+    <div class="content not-main" id="aboutMe">
+      <h2>About me </h2>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </div>
+
+    <div class="content not-main" id="contact">
+      <h2>Contact</h2>
+      <a href="https://www.linkedin.com/nicolearantes">Linkedin </a>
+      <a href="#"> GitHub</a>
+      <a href="#">Email</a>
+
+    </div>
+
+    <footer>
+      <p class="copyright">Made with <b>♡</b> by ©Nicole Arantes</p>
+    </footer>
+  </section>
+
+
+  <script type="text/javascript" src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
