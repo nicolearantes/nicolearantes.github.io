@@ -16,49 +16,34 @@
   <script src="https://kit.fontawesome.com/a5fd40ec0e.js" crossorigin="anonymous"></script>
 
   <!-- GoogleFonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&family=Julius+Sans+One&family=Rock+Salt&family=Staatliches&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&family=Rock+Salt&family=Staatliches&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,500;1,300&family=Julius+Sans+One&family=Rock+Salt&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <section id="home" onclick="location.href='#'">
+
+  <!-- Menu -->
+  <section id="home">
 
     <nav>
       <ul>
-        <li id="skills-button" onclick="event.stopPropagation()"><a href="#skills"> Skills </a></li>
-
-        <li id="aboutMe-button" onclick="event.stopPropagation()"><a href="#aboutMe">About Me</a></li>
-
-        <li id="contact-button" onclick="event.stopPropagation()"><a href="#contact">Contact</a></li>
+        <li id="skills-button"><a href="#skills"> Skills </a></li>
+        <li id="aboutMe-button"><a href="#aboutMe">About Me</a></li>
+        <li id="contact-button"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="content selected home-container" id="main">
-      <ul class="rainbow">
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-      </ul>
-    </div>
+    <!-- Menu Container -->
 
     <div class="content not-main" id="skills">
       <h2>Web designer in process</h2>
+
       <p>I'm doing a Full Stack Web Design course by Brevery App.
         So far I've learned some skills.</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Bootstrap</li>
-        <li>JavaScript</li>
-      </ul>
     </div>
 
     <div class="content not-main" id="aboutMe">
-      <h2>About me </h2>
+      <h2>Hello, nice to meet you </h2>
       <p>
         I'm a brazilian student of Web Design located in Hamburg - Germany.
         I speak brazilian portuguese, english and B1 level of german.
@@ -68,11 +53,37 @@
     </div>
 
     <div class="content not-main" id="contact">
-      <h2>Contact</h2>
-      <a href="https://www.linkedin.com/nicolearantes">Linkedin </a>
-      <a href="#"> GitHub</a>
-      <a href="#">Email</a>
+      <h2>You can find me here</h2>
 
+        <ul class="contact-ul">
+          <li class="contact-li">
+          <i class="icon far fa-envelope"></i>
+          <a href="nicolearantes@live.com">nicolearantes@live.com </a>
+          </li>
+
+          <li class="contact-li">
+          <i class="icon fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/nicolearantes/">Linkedin</a>
+          </li>
+
+          <li class="contact-li">
+          <i class="icon fab fa-github"></i>
+          <a href="https://github.com/nicolearantes"> GitHub</a>
+          </li>
+        </ul>
+
+    </div>
+
+
+<!-- Home container -->
+    <div class="content selected home-container" id="main">
+      <ul class="rainbow">
+        <li>Nicole Arantes</li>
+        <li>Nicole Arantes</li>
+        <li>Nicole Arantes</li>
+        <li>Nicole Arantes</li>
+        <li>Nicole Arantes</li>
+      </ul>
     </div>
 
     <footer>

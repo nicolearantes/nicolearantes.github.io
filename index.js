@@ -26,6 +26,8 @@ function select() {
   console.log(newButton)
 }
 
+// Events
+
 window.addEventListener('hashchange', function(){
   select()
 });
@@ -33,3 +35,13 @@ window.addEventListener('hashchange', function(){
 window.addEventListener('load', function(){
   select()
 });
+
+document.querySelector("#home").addEventListener("click", function() {
+  location.href = '#';
+});
+
+for (each of document.querySelectorAll("nav li, .content")) {
+  each.addEventListener("click", function() {
+    event.stopPropagation();
+  })
+}

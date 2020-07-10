@@ -5,41 +5,26 @@ body {
 }
 
 h1 {
-  color: black;
+  color: #424242;
   font-family: 'Bebas Neue', cursive;
   font-size: 6rem;
   letter-spacing: 10px;
 }
 
-
-a {
-  text-align: center;
-  color: #e42c64;
+h2 {
+  color: #424242;
+  font-size: 4rem;
+  width: 20%;
 }
 
 #home {
   padding: 2% 2% 0 2%;
-  height: calc(100% - 20px);
+  height: calc(100% - 40px);
   position: absolute;
   width: 100%;
-
-}
-.home-container {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.copyright {
-  color: #fbc1bc;
-  font-family: 'Staatliches', cursive;
-  margin: 0;
-  font-size: 1rem;
-  text-align: center;
-  line-height: 20px;
-}
-
+/* Menu */
 nav ul {
   margin:0;
   padding: 0;
@@ -52,7 +37,31 @@ nav li {
 }
 
 nav li.selected {
-  background-color: #f7c5a8;
+  background-color: #A7FFEB;
+}
+
+/* Menu Container */
+a {
+  text-align: center;
+  color: #ff0266;
+}
+
+a:hover {
+  color: #9575CD;
+}
+.content p {
+  color: #e42c64;
+  position: relative;
+  bottom: 50%;
+  left: 30%;
+  width: 50%;
+  text-align:justify;
+}
+
+.contact-ul {
+  list-style-type: none;
+  padding: 5% 0;
+  color: #e42c64;
 }
 
 .content {
@@ -65,12 +74,45 @@ nav li.selected {
 }
 
 .content.not-main {
-  background-color: #f7c5a8;
+  background-color: #A7FFEB;
 }
 
+/* Home Container */
+
+.home-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  color: #9575CD;
+  font-family: 'Staatliches', cursive;
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* MediaQuery */
 @media (max-width: 600px) {
   ul.rainbow {
     font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 600px){
+  h2 {
+    font-size: 3rem;
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px){
+  .content p {
+    width: 70%;
+    top: 1%;
   }
 }
 
