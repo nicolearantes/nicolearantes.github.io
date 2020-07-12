@@ -6,13 +6,6 @@ body {
 
 }
 
-h1 {
-  color: #424242;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 6rem;
-  letter-spacing: 10px;
-}
-
 h2 {
   color: #424242;
   font-size: 4.75rem;
@@ -118,38 +111,6 @@ nav li.selected {
   line-height: 40px;
 }
 
-/* MediaQuery */
-
-@media (max-width: 600px) {
-  ul.rainbow {
-    font-size: 4.5rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-    width: fit-content;
-    margin-bottom: 3rem;
-
-  }
-  .content {
-    flex-wrap: wrap;
-  }
-
-  .content span {
-    margin: 0;
-    text-align: left;
-  }
-
-  .contact-ul .full {
-    display: none;
-  }
-
-  .contact-ul .short {
-    display: inline;
-  }
-}
-
-
 /* Animation start */
 
 @keyframes rainbow {
@@ -163,8 +124,8 @@ ul.rainbow {
   margin: 0;
   padding: 0;
   position: relative;
-  color: black;
-  font-family: 'Bebas Neue', cursive;
+  color: #424242;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 6rem;
   letter-spacing: 10px;
 }
@@ -208,4 +169,36 @@ ul.rainbow li:nth-child(5) {
     animation: none;
 }
 
-/* Animation end */
+/* MediaQuery */
+
+@media (max-width: 600px) {
+  ul.rainbow {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+
+  #skills span {
+    margin: 0;
+    text-align: left;
+  }
+
+  .contact-ul {
+    width: 100%;
+  }
+
+  .contact-ul .full {
+    display: none;
+  }
+
+  .contact-ul .short {
+    display: inline;
+  }
+}
