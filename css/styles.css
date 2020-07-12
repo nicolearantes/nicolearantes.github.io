@@ -2,7 +2,8 @@ body {
   background-color: white;
   color: #EC407A;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+
 }
 
 h1 {
@@ -35,11 +36,17 @@ a:hover {
   text-decoration: none;
 }
 
+/* IDs */
+
 #home {
   padding: 2% 2% 0 2%;
   height: calc(100% - 40px);
   position: absolute;
   width: 100%;
+}
+
+#skills span {
+  margin-left: 40px;
 }
 
 /* Menu */
@@ -70,24 +77,20 @@ nav li.selected {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
-.content span {
-  text-align:justify;
-  margin-left: 40px;
-}
-
 
 .content strong {
   font-weight: bold;
-  
 }
 
 .contact-ul {
   list-style-type: none;
   padding: 0;
   color: #F50057;
+}
+
+.contact-ul .short {
+  display: none;
 }
 
 .content:not(.selected) {
@@ -116,6 +119,7 @@ nav li.selected {
 }
 
 /* MediaQuery */
+
 @media (max-width: 600px) {
   ul.rainbow {
     font-size: 4.5rem;
@@ -129,14 +133,22 @@ nav li.selected {
   }
   .content {
     flex-wrap: wrap;
-
   }
 
   .content span {
     margin: 0;
     text-align: left;
   }
+
+  .contact-ul .full {
+    display: none;
+  }
+
+  .contact-ul .short {
+    display: inline;
+  }
 }
+
 
 /* Animation start */
 
