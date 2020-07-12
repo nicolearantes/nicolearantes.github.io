@@ -1,8 +1,9 @@
 body {
   background-color: white;
   color: #EC407A;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 h2 {
@@ -31,7 +32,7 @@ a:hover {
 /* IDs */
 
 #home {
-  padding: 2% 2% 0 2%;
+  padding: 10px 10px 0 10px;
   height: calc(100% - 40px);
   position: absolute;
   width: 100%;
@@ -69,12 +70,10 @@ nav li.selected {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-
 }
 
 .content strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .contact-ul {
