@@ -1,0 +1,15 @@
+body {
+  background-color: white;
+  color: #EC407A;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  color: #424242;
+  font-size: 4.75rem;
+  margin-right: 20px;
+  width: 300px;
+  font-family: 'Staatliches', sans-serif;
+}
