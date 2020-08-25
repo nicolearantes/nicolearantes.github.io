@@ -1,27 +1,131 @@
 body {
   background-color: white;
-  color: #EC407A;
+  /* color: #EC407A; */
+  color: #424242;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-h2 {
+/*
+h1, h2, h3, p {
   color: #424242;
-  font-size: 4.75rem;
-  margin-right: 20px;
   width: 300px;
-  font-family: 'Staatliches', sans-serif;
+  position: relative;
+  left: 60%;
+  /* top: 10%; */
+/* } */
+
+/* Homepage */
+
+
+h1 {
+  color: #424242;
+  width: 300px;
+  position: relative;
+  left: 60%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  letter-spacing: 10px;
+  bottom: 300px;
 }
+
+.homesub {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 3rem;
+  width: 170px;
+  color: #424242;
+  width: 300px;
+  position: relative;
+  left: 60%;
+
+}
+
+.p-home {
+  color: #424242;
+  width: 300px;
+  position: relative;
+  left: 60%;
+}
+
+.web-development{
+  bottom: 300px;
+  text-align: center;
+}
+
+.self-img {
+  position: sticky;
+  right: 40%;
+  top: 20%;
+  z-index: 1;
+}
+
+.about-me {
+  bottom: 50px;
+  position: relative;
+}
+
+img {
+  border-radius: 5px;
+  padding: 30px;
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+#home {
+  margin: 40px 0px 70px 0px;
+}
+
+/* Skills and Projects Section */
+
+#skills {
+  height: 100%;
+  background-color: black;
+  /* position: relative; */
+}
+
 
 h3 {
   font-family: 'Staatliches', sans-serif;
   color: #424242;
 }
 
+.skillssub{
+  font-family: 'Staatliches', sans-serif;
+  font-size: 3rem;
+}
+
+.carrousel-inner {
+  height: 400px;
+  /* width: 30%; */
+  padding: 0 20% ;
+}
+
+.skills-title {
+  color: #424242;
+  width: 300px;
+  position: relative;
+  left: 70%;
+  top: 150px;
+}
+
+#skills-carrousel {
+  width: 65%;;
+}
+
+/* Contact Section */
+
+#contact {
+  background-color: blue;
+  /* position: relative; */
+}
+
+/* General Section */
 a {
   text-align: center;
-  color: #FF80AB;
+  /* color: #FF80AB; */
+  color: #424242;
+
 }
 
 a:hover {
@@ -29,24 +133,29 @@ a:hover {
   text-decoration: none;
 }
 
+footer {
+  position: relative;
+  background-color: white;
+}
+
+
+
+
+
+
+
 /* IDs */
 
-#home {
-  padding: 10px 10px 0 10px;
-  height: calc(100% - 40px);
-  position: absolute;
-  width: 100%;
-}
 
-#skills span {
-  margin-left: 40px;
-}
+
+
+
 
 /* Menu */
 
 nav ul {
   margin:0;
-  padding: 0;
+  padding-top: 20px;
   text-transform: uppercase;
 }
 
@@ -64,15 +173,15 @@ nav li.selected {
 
 /* Menu Container */
 
-.content {
+/* .content {
   min-height: calc(100% - 40px);
   padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.content strong {
+/* .content strong {
   font-weight: 800;
 }
 
@@ -84,23 +193,23 @@ nav li.selected {
 
 .contact-ul .short {
   display: none;
-}
+} */
 
-.content:not(.selected) {
+/* .content:not(.selected) {
   display: none;
 }
 
 .content.not-main {
   background-color: #A7FFEB;
-}
+} */
 
 
 /* Home Container */
 
-.home-container {
+/* .home-container {
   text-align: center;
 
-}
+} */
 
 .copyright {
   color: #FF80AB;
@@ -113,7 +222,7 @@ nav li.selected {
 
 /* Animation start */
 
-@keyframes rainbow {
+/* @keyframes rainbow {
   0%  {top: 0;}
   20%  {top:-2rem;}
   60%  {top:2rem;}
@@ -170,7 +279,7 @@ ul.rainbow li:nth-child(5) {
 }
 
 /* MediaQuery */
-
+/*
 @media (max-width: 600px) {
   ul.rainbow {
     font-size: 4.5rem;
@@ -183,9 +292,9 @@ ul.rainbow li:nth-child(5) {
   }
   .content {
     flex-wrap: wrap;
-  }
+  } */
 
-  #skills span {
+  /* #skills span {
     margin: 0;
     text-align: left;
   }
@@ -201,4 +310,4 @@ ul.rainbow li:nth-child(5) {
   .contact-ul .short {
     display: inline;
   }
-}
+} */ */
