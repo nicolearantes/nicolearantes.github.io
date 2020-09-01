@@ -55,9 +55,16 @@ h1 {
 
 .self-img {
   position: sticky;
-  right: 40%;
-  top: 20%;
+  right: 50%;
+  top: 25%;
   z-index: 1;
+  max-width: 30%;
+  height: auto;
+}
+
+.flower-img {
+  max-width: 45%;
+  height: auto;
 }
 
 .about-me {
