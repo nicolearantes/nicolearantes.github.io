@@ -1,36 +1,46 @@
 body {
   background-color: white;
-  /* color: #EC407A; */
   color: #424242;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
+  margin: 3%;
+} 
+
+h1 {
+  color: #424242;
+  width: 100px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.75rem;
+  /* margin-left: auto; */
+  bottom: 300px;
 }
 
-/*
-h1, h2, h3, p {
+
+h2 {
   color: #424242;
-  width: 300px;
-  position: relative;
-  left: 60%;
-  /* top: 10%; */
-/* } */
+  font-family: 'Staatliches', sans-serif;
+  width: 100px;
+  margin-left: auto;
+  justify-content: space-between;
+ }
+
+ p {
+  color: #424242;
+  width: 120px;
+}
 
 /* Homepage */
 
 
-h1 {
-  color: #424242;
-  width: 300px;
-  position: relative;
-  left: 60%;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 6rem;
-  letter-spacing: 10px;
-  bottom: 300px;
-}
 
-.homesub {
+
+/* h2, p {
+display: flex;
+flex-direction: row-reverse ;
+} */
+
+
+
+/* .homesub {
   font-family: 'Staatliches', sans-serif;
   font-size: 3rem;
   width: 170px;
@@ -39,100 +49,95 @@ h1 {
   position: relative;
   left: 60%;
 
-}
+} */
 
-.p-home {
-  color: #424242;
-  width: 300px;
-  position: relative;
-  left: 60%;
-}
 
-.web-development{
+/* .web-development{
   bottom: 300px;
   text-align: center;
-}
+} */
 
 .self-img {
   position: sticky;
-  right: 50%;
-  top: 25%;
-  z-index: 1;
+  top: 0;
+  /* right: 45%; */
+  /* top: 18%; */
+  z-index: -1;
   max-width: 30%;
   height: auto;
 }
 
-.flower-img {
-  max-width: 45%;
+/* .flower-img {
+  max-width: 40%;
   height: auto;
-}
+} */
 
-.about-me {
-  bottom: 50px;
-  position: relative;
-}
-
+.group {
+  display: -webkit-box;
+  /* margin-left: auto; */
+  /* flex-direction: row-reverse; */
+  /* left: 50px; */
+  /* justify-content: space-between; */
+} 
+/* 
 img {
   border-radius: 5px;
-  padding: 30px;
+  padding: 30px; */
   /* width: 100%; */
   /* height: auto; */
-}
+/* } */
 
 #home {
-  margin: 40px 0px 70px 0px;
-}
+  /* display: inline-flex; */
+  /* margin: 3%; */
+} 
 
 /* Skills and Projects Section */
 
-#skills {
-  height: 100%;
-  background-color: black;
+/* #skills { */
+  /* height: 100%; */
+  /* display: inline-flex;
+  background-color: black; */
   /* position: relative; */
-}
+ /* }  */
 
 
-h3 {
+/* h3 {
   font-family: 'Staatliches', sans-serif;
   color: #424242;
-}
-
+} */
+/* 
 .skillssub{
   font-family: 'Staatliches', sans-serif;
   font-size: 3rem;
-}
+} */
 
-.carrousel-inner {
+/* .carrousel-inner {
   height: 400px;
   /* width: 30%; */
-  padding: 0 20% ;
-}
+  /* padding: 0 20% ;
+}  */
 
 .skills-title {
-  color: #424242;
-  width: 300px;
-  position: relative;
-  left: 70%;
-  top: 150px;
+  display: inline-flex;
 }
-
+/* 
 #skills-carrousel {
   width: 65%;;
-}
+} */
 
 /* Contact Section */
 
-#contact {
-  background-color: blue;
+/* #contact {
+  background-color: blue; */
   /* position: relative; */
-}
+/* } */
 
 /* General Section */
 a {
   text-align: center;
-  /* color: #FF80AB; */
+  color: #FF80AB;
   color: #424242;
-
 }
 
 a:hover {
@@ -218,14 +223,14 @@ nav li.selected {
 
 } */
 
-.copyright {
+/* .copyright {
   color: #FF80AB;
   font-family: 'Staatliches', cursive;
   margin: 0;
   font-size: 1rem;
   text-align: center;
   line-height: 40px;
-}
+} */
 
 /* Animation start */
 
@@ -317,4 +322,4 @@ ul.rainbow li:nth-child(5) {
   .contact-ul .short {
     display: inline;
   }
-} */ */
+} */ 

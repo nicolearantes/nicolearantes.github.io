@@ -33,7 +33,6 @@
 
   <nav>
     <ul>
-      <li id="about-me-button"><a href="#about-me">About Me</a></li>
       <li id="skills-button"><a href="#skills"> | Skills and Projects </a></li>
       <li id="contact-button"><a href="#contact">| Contact</a></li>
     </ul>
@@ -42,13 +41,15 @@
 
   <div id="home">
 
-    <img class="flower-img" src="img/flowers-photo.jpg" alt="Photo of Flowers">
+    <!-- <img class="flower-img" src="img/flowers-photo.jpg" alt="Photo of Flowers"> -->
     <img class="self-img" src="img/nicole-arantes.jpg" alt="Nicole Arantes Photo">
 
-    <h1>Nicole Arantes</h1>
-    <p class="web-development p-home">Web Development Stundent</p>
+      
+          <h1>Nicole Arantes</h1>
+          <p class="web-development p-home">Web Development Student</p>
+    
 
-    <div class="about-me">
+    <div class="about-me group">
       <h2 class="homesub">Hello, nice to meet you </h2>
       <span>
         <p class="p-home">
@@ -57,9 +58,9 @@
         <p class="p-home">
           I'm Brazilian, living in Hamburg, Germany since 2019.
         </p>
-        <p class="p-home">
+        <!-- <p class="p-home">
           I love dancing, handcraft and arts.
-        </p>
+        </p> -->
       </span>
     </div>
 
@@ -67,7 +68,7 @@
 
   <!-- Skills and Projects Section -->
 
-  <div class="content not-main" id="skills">
+  <div class="content not-main group" id="skills">
 
     <div class="skills-title">
       <h2 class="skillssub">Skills and Projects</h2>
@@ -76,7 +77,7 @@
       </p>
     </div>
 
-    <div id="skills-carrousel" class="carousel slide" data-ride="carrousel">
+    <!-- <div id="skills-carrousel" class="carousel slide" data-ride="carrousel">
       <div class="carrousel-inner">
 
         <div class="carousel-item active">
@@ -115,47 +116,43 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div> -->
 
 
     </div>
   </div>
 
+  <!-- Contact Section -->
+
+  <div class="content not-main group" id="contact">
+    <h2>You can find me here</h2>
+
+    <h3>I'm looking for a new job oportunity</h3>
+    <p>Where you can contact me </p>
+
+    <ul class="contact-ul">
+      <li class="contact-li">
+        <a href="mailto:nicolearantes@live.com"><i class="icon far fa-envelope"></i> <span
+            class="full">nicolearantes@live.com</span><span class="short">Email</span></a>
+      </li>
+
+      <li class="contact-li">
+        <a href="https://www.linkedin.com/in/nicolearantes/" target="_blank"><i class="icon fab fa-linkedin"></i>
+          <span>Linkedin</span></a>
+      </li>
+
+      <li class="contact-li">
+        <a href="https://github.com/nicolearantes" target="_blank"><i class="icon fab fa-github"></i>
+          <span>GitHub</span></a>
+      </li>
+    </ul>
+
+  </div>
 
 
+  <!-- Home container -->
 
-
-
-    <!-- Contact Section -->
-
-    <div class="content not-main" id="contact">
-      <h2>You can find me here</h2>
-
-      <h3>I'm looking for a new job oportunity</h3>
-      <p>Where you can contact me </p>
-
-      <ul class="contact-ul">
-        <li class="contact-li">
-          <a href="mailto:nicolearantes@live.com"><i class="icon far fa-envelope"></i> <span
-              class="full">nicolearantes@live.com</span><span class="short">Email</span></a>
-        </li>
-
-        <li class="contact-li">
-          <a href="https://www.linkedin.com/in/nicolearantes/" target="_blank"><i class="icon fab fa-linkedin"></i>
-            <span>Linkedin</span></a>
-        </li>
-
-        <li class="contact-li">
-          <a href="https://github.com/nicolearantes" target="_blank"><i class="icon fab fa-github"></i>
-            <span>GitHub</span></a>
-        </li>
-      </ul>
-
-    </div>
-
-
-    <!-- Home container -->
-    <!-- <div class="content selected home-container" id="main">
+  <!-- <div class="content selected home-container" id="main">
       <ul class="rainbow">
         <li>Nicole Arantes</li>
         <li>Nicole Arantes</li>
@@ -165,29 +162,28 @@
       </ul>
     </div> -->
 
-    <footer>
+  <footer>
 
-      <nav>
-        <ul>
-          <li id="about-me-button"><a href="#about-me">About Me</a></li>
-          <li id="skills-button"><a href="#skills"> | Skills and Projects </a></li>
-          <li id="contact-button"><a href="#contact">| Contact</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li id="skills-button"><a href="#skills"> | Skills and Projects </a></li>
+        <li id="contact-button"><a href="#contact">| Contact</a></li>
+      </ul>
+    </nav>
 
-      <p class="copyright">Made with <b>♡</b> by ©Nicole Arantes</p>
-    </footer>
-    <!-- </section> -->
+    <p class="copyright">Made with <b>♡</b> by ©Nicole Arantes</p>
+  </footer>
+  <!-- </section> -->
 
 
-    <script type="text/javascript" src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
