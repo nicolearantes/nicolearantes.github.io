@@ -33,36 +33,41 @@
 
   <nav>
     <ul>
-      <li id="skills-button"><a href="#skills"> | Skills and Projects </a></li>
-      <li id="contact-button"><a href="#contact">| Contact</a></li>
+      <li id="skills-button"><a href="#skills"> Skills </a></li>
+      <li>|</li>
+      <li id="contact-button"><a href="#contact"> Contact</a></li>
     </ul>
   </nav>
-  <!-- <section id="home"> -->
+
+<!-- Home Section -->
 
   <div id="home">
 
-    <!-- <img class="flower-img" src="img/flowers-photo.jpg" alt="Photo of Flowers"> -->
-    <img class="self-img" src="img/nicole-arantes.jpg" alt="Nicole Arantes Photo">
-
-      
-          <h1>Nicole Arantes</h1>
-          <p class="web-development p-home">Web Development Student</p>
-    
-
-    <div class="about-me group">
-      <h2 class="homesub">Hello, nice to meet you </h2>
-      <span>
-        <p class="p-home">
-          My name is Nicole, I'm a Web Designer / Developer student.
-        </p>
-        <p class="p-home">
-          I'm Brazilian, living in Hamburg, Germany since 2019.
-        </p>
-        <!-- <p class="p-home">
-          I love dancing, handcraft and arts.
-        </p> -->
-      </span>
-    </div>
+          <img class="self-img" src="img/nicole-arantes.jpg" alt="Nicole Arantes Photo">
+          
+          <div class="title">
+          
+            <h1>Nicole Arantes</h1>
+            <p class="subtitle">Web Development Student</p>
+          </div>
+          
+          <div id="about-me" class="group">
+            <h2>Hello, nice to meet you </h2>
+            <span>
+              <div class="about-me-p">
+                  <p>
+                    My name is Nicole, I'm a Web Designer / Developer student.
+                  </p>
+                  <p>
+                    I'm Brazilian, living in Hamburg, Germany since 2019.
+                  </p>
+                  <p>
+                    I love dancing, handcraft and arts.
+                  </p> 
+              </div>
+             
+            </span>
+          </div>
 
   </div>
 
@@ -71,31 +76,42 @@
   <div class="content not-main group" id="skills">
 
     <div class="skills-title">
-      <h2 class="skillssub">Skills and Projects</h2>
-      <p class="skillsp">
-        I'm learning new skills everyday.
+      <h2>Skills and Projects</h2>
+      <p>
+        I'm learning new skills everyday
       </p>
     </div>
 
     <!-- <div id="skills-carrousel" class="carousel slide" data-ride="carrousel">
-      <div class="carrousel-inner">
+      <div class="carrousel-inner"> -->
 
-        <div class="carousel-item active">
-          <h3 class="d-block w-100">Programming</h3>
-          <p>
-            I've <a class="skills-anchor"
-              href="https://www.udemy.com/certificate/UC-633bea4c-92c7-4975-9324-90938bf69e67/"
-              target="_blank">finished</a>
-            a Web Design introductory course, by Ivan Lourenço, and I'm now taking a Full Stack Web Development
-            <a class="skills-anchor" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
-              target="_blank">bootcamp</a>,
-            by London App Brewery.
-          </p>
-          <p>I've alredy learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong> and
-            <strong>Javascript</strong>. </p>
+        <div class="skills-container">
+
+          <div class="skills-programming">
+            <h3>Programming</h3>
+            <p>
+              I've <a class="skills-anchor" href="https://www.udemy.com/certificate/UC-633bea4c-92c7-4975-9324-90938bf69e67/"
+                target="_blank">finished</a>
+              a Web Design introductory course, by Ivan Lourenço, and I'm now taking a Full Stack Web Development
+              <a class="skills-anchor" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                target="_blank">bootcamp</a>,
+              by London App Brewery.
+            </p>
+            <p>I've alredy learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong> and
+              <strong>Javascript</strong>. </p>
+          </div>
+          <div class="all-buttons-skills">
+            <button class="button-skills"></button>
+            <button class="button-skills"></button>
+            <button class="button-skills"></button>
+
+          </div>
+
         </div>
 
-        <div class="carousel-item">
+        
+
+        <!-- <div class="carousel-item">
           <h3 class="d-block w-100">Languages</h3>
           <p>
             I've completed the German Integration Course up to level B1 at InLingua Sprachschule on February 2020. I can
@@ -118,62 +134,70 @@
         </a>
       </div> -->
 
+    </div> 
 
-    </div>
   </div>
 
   <!-- Contact Section -->
 
   <div class="content not-main group" id="contact">
-    <h2>You can find me here</h2>
 
-    <h3>I'm looking for a new job oportunity</h3>
-    <p>Where you can contact me </p>
+    <div class="contact-title">
+      <h2>You can contact me here</h2>
+      <!-- <i class="icon far fa-envelope social-media-icons fa-3x"></i> -->
+    </div>
 
-    <ul class="contact-ul">
-      <li class="contact-li">
-        <a href="mailto:nicolearantes@live.com"><i class="icon far fa-envelope"></i> <span
-            class="full">nicolearantes@live.com</span><span class="short">Email</span></a>
-      </li>
 
-      <li class="contact-li">
-        <a href="https://www.linkedin.com/in/nicolearantes/" target="_blank"><i class="icon fab fa-linkedin"></i>
-          <span>Linkedin</span></a>
-      </li>
+    <div class="social-media">
+      <h3>I'm Open for a new job oportunity</h3>
+      <p>Please send me a message if you want to know more about my work. </p>
 
-      <li class="contact-li">
-        <a href="https://github.com/nicolearantes" target="_blank"><i class="icon fab fa-github"></i>
-          <span>GitHub</span></a>
-      </li>
-    </ul>
+      <div class="contact-form">
+        <form action="">
+        
+          <label>Name</label>
+          <input type="text"  name="name-input">
+        
+          <label for="">Email</label>
+          <input type="text" name="email-input">
+        
+          <label for=""> Message </label>
+          <textarea rows="2" cols="25" name="text-input"></textarea>
+        
+          <button type="submit" class="btn btn-danger contact-button">Send</button>
+        </form>
+
+      </div>
+      
+      <p>
+        I'll be happy to talk with you.
+      </p> 
+
+    </div>
 
   </div>
 
-
-  <!-- Home container -->
-
-  <!-- <div class="content selected home-container" id="main">
-      <ul class="rainbow">
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-      </ul>
-    </div> -->
-
   <footer>
 
-    <nav>
-      <ul>
-        <li id="skills-button"><a href="#skills"> | Skills and Projects </a></li>
-        <li id="contact-button"><a href="#contact">| Contact</a></li>
-      </ul>
-    </nav>
+    <div class="footer-container">
+      <nav>
+        <ul>
+          <li id="skills-button"><a href="#about-me"> About Me</a></li>
+          <li>|</li>
+          <li id="contact-button"><a href="#skills"> Skills </a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.linkedin.com/in/nicolearantes/" target="_blank"><i class="icon fab fa-linkedin social-media-icons"></i></a>
+      <a href="https://github.com/nicolearantes" target="_blank"><i class="icon fab fa-github social-media-icons"></i></a>
+    </div>
+
+    
+
 
     <p class="copyright">Made with <b>♡</b> by ©Nicole Arantes</p>
   </footer>
-  <!-- </section> -->
+
 
 
   <script type="text/javascript" src="index.js"></script>
