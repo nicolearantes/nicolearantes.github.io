@@ -1,106 +1,128 @@
 body {
-  background-color: white;
-  color: #EC407A;
-  font-family: 'Barlow Condensed', sans-serif;
+  color: #424242;
+  font-family: 'Anonymous Pro', monospace;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-h2 {
-  color: #424242;
-  font-size: 4.75rem;
-  margin-right: 20px;
-  width: 300px;
+h1, h2, h3 {
   font-family: 'Staatliches', sans-serif;
 }
 
-h3 {
-  font-family: 'Staatliches', sans-serif;
-  color: #424242;
+h1 {
+  font-size: 105px;
+  text-align: left;
+  width: 350px;
 }
+
+h2 {
+  font-size: 4.75rem;
+  margin-right: 20px;
+}
+
 
 a {
   text-align: center;
-  color: #FF80AB;
+  color:#F06292;
 }
 
 a:hover {
-  color: #F06292;
+  color: #ffd5cd;
   text-decoration: none;
 }
 
-/* IDs */
+footer {
+  background-color: #fff1e9;
+  padding: 20px 0 10px 0;
+}
 
-#home {
-  padding: 10px 10px 0 10px;
-  height: calc(100% - 40px);
-  position: absolute;
+.main {
   width: 100%;
+  max-width: 1920px;
+  margin: auto;
 }
 
-#skills span {
-  margin-left: 40px;
+/* Go to Top Button */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-/* Menu */
+/* Navbar Section */
 
-nav ul {
+.nav ul {
   margin:0;
   padding: 0;
-  text-transform: uppercase;
 }
 
-nav li {
-  list-style: none;
-  display: inline-block;
-  padding: 0 10px;
-  line-height: 40px;
-  font-family: 'Staatliches', sans-serif;
-}
-
-nav li.selected {
-  background-color: #A7FFEB;
-}
-
-/* Menu Container */
-
-.content {
-  min-height: calc(100% - 40px);
-  padding: 50px;
+.navbar-menu {
+  color:#F06292;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+
 }
 
-.content strong {
-  font-weight: 800;
+/* Home Section */
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 
-.contact-ul {
-  list-style-type: none;
-  padding: 0;
-  color: #F50057;
+.p-title {
+  font-size: 1.3rem;
+  width: 400px;
+  text-align: left;
+  position: relative;
+  align-self: flex-end;
+  top: 10px;
 }
 
-.contact-ul .short {
-  display: none;
-}
+/* Skills Section */
 
-.content:not(.selected) {
-  display: none;
-}
-
-.content.not-main {
+#skills {
   background-color: #A7FFEB;
+  padding: 50px 15px 20px 15px;
+  margin: 0;
 }
 
-
-/* Home Container */
-
-.home-container {
+#skills ul {
+  list-style-type: none;
   text-align: center;
+  }
 
+.skills-titles {
+  text-align: center;
 }
+
+#skills p {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 0 20px;
+}
+
+.fa-skill {
+  padding-bottom: 20px;
+  color:#F06292;
+}
+
+/* Contact Section */
+
+#contact {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Footer Section */
 
 .copyright {
   color: #FF80AB;
@@ -111,69 +133,21 @@ nav li.selected {
   line-height: 40px;
 }
 
-/* Animation start */
-
-@keyframes rainbow {
-  0%  {top: 0;}
-  20%  {top:-2rem;}
-  60%  {top:2rem;}
-  80%  {top:0;}
+.social-media {
+  text-align: center;
 }
 
-ul.rainbow {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  color: #424242;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 6rem;
-  letter-spacing: 10px;
+.social-media a {
+  padding: 30px  0;
+
 }
 
-ul.rainbow li {
-    list-style: none;
-    position: absolute;
-    top: 0;
-    cursor: default;
-}
-
-ul.rainbow li:nth-child(1){
-    position:relative;
-}
-
-ul.rainbow:hover li {
-    animation: rainbow 2s ease-in-out;
-}
-
-ul.rainbow li:nth-child(1) {
-    animation-delay: 0ms;
-    color: #64DD17;
-}
-
-ul.rainbow li:nth-child(2) {
-    animation-delay: 50ms;
-    color: #0336ff;
-}
-
-ul.rainbow li:nth-child(3) {
-    animation-delay: 100ms;
-    color: #ffde03;
-}
-
-ul.rainbow li:nth-child(4) {
-    animation-delay: 150ms;
-    color: #ff0266;
-}
-
-ul.rainbow li:nth-child(5) {
-    animation: none;
-}
 
 /* MediaQuery */
 
 @media (max-width: 600px) {
-  ul.rainbow {
-    font-size: 4.5rem;
+  h1 {
+    font-size: calc(21vw - 18px);
   }
 
   h2 {
@@ -184,6 +158,11 @@ ul.rainbow li:nth-child(5) {
   .content {
     flex-wrap: wrap;
   }
+
+  .navbar-menu {
+      justify-content: center;
+  }
+
 
   #skills span {
     margin: 0;
