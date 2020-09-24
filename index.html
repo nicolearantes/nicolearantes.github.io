@@ -7,7 +7,8 @@
   <title>Nicole Arantes</title>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -16,105 +17,143 @@
   <script src="https://kit.fontawesome.com/a5fd40ec0e.js" crossorigin="anonymous"></script>
 
   <!-- GoogleFonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&family=Barlow+Condensed:ital,wght@0,500;0,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Staatliches&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- Menu -->
-  <section id="home">
+  <div class="main">
 
-    <nav>
-      <ul>
-        <li id="about-me-button"><a href="#about-me">About Me</a></li>
-        <li id="skills-button"><a href="#skills"> Skills </a></li>
-        <li id="contact-button"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 
-    <!-- Menu Container -->
 
-    <div class="content not-main" id="about-me">
-      <h2>Hello, nice to meet you </h2>
-      <span>
-        <p>
-          My name is Nicole, I'm studying to become a Web Designer / Developer.
-        </p>
-        <p>
-          I'm Brazilian, living in Hamburg, Germany since 2019.
-        </p>
-        <p>
-          I love dancing, handcraft and arts.
-        </p>
-      </span>
+    <!-- Go to Top Button -->
+
+    <i id="myBtn" onclick="topFunction()" title="Go to top" class="fas fa-arrow-up"></i>
+
+    <!-- Navbar Section -->
+
+    <div class="navbar-menu">
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+
+    <!-- Home Section -->
+
+    <div id="home">
+
+      <h1>Web Development Student</h1>
+      <p class="p-title">Hi, nice to meet you.<br>I'm Nicole Arantes, a brazilian Web Designer/Developer student located
+        in Hamburg - Germany since 2019.</p>
 
     </div>
 
-    <div class="content not-main" id="skills">
-      <h2>Web Developer in progress</h2>
-      <span>
-        <p>
-          I'm learning new skills everyday.
-        </p>
+    <!-- Skills Section -->
 
-        <h3>Programming</h3>
-        <p>
-          I've <a class="skills-anchor" href="https://www.udemy.com/certificate/UC-633bea4c-92c7-4975-9324-90938bf69e67/" target="_blank">finished</a>
-          a Web Design introductory course, by Ivan Lourenço, and I'm now taking a Full Stack Web Development
-          <a class="skills-anchor" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">bootcamp</a>,
-          by London App Brewery.
-        </p>
-        <p>I've alredy learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong> and <strong>Javascript</strong>. </p>
-        <h3>Languages</h3>
-        <p>
-          I've completed the German Integration Course up to level B1 at InLingua Sprachschule on February 2020. I can also speak English (intermediate level) and Portuguese (my native language).
-        </p>
+    <div class="container-fluid" id="skills">
 
-      </span>
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="skills-titles">
+
+            <i class="fas fa-code fa-3x fa-skill"></i>
+            <h3>Programming</h3>
+          </div>
+
+
+          <p>
+            I've <a class="skills-anchor"
+              href="https://www.udemy.com/certificate/UC-633bea4c-92c7-4975-9324-90938bf69e67/"
+              target="_blank">finished</a>
+            a Web Design introductory course, by Ivan Lourenço, and I'm now taking a Full Stack Web Development
+            <a class="skills-anchor" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+              target="_blank">bootcamp</a>,
+            by London App Brewery.
+          </p>
+          <p>I've already learned <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong> and
+            <strong>Javascript</strong>. </p>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="skills-titles">
+            <i class="fas fa-language fa-3x fa-skill"></i>
+            <h3>Languages</h3>
+
+          </div>
+
+          <p>
+            I've completed the German Integration Course up to level B1 at InLingua Sprachschule on February 2020. I
+            can
+            also speak English (intermediate level) and Portuguese (my native language).
+          </p>
+        </div>
+
+        <!-- <div class="col-lg-4">
+
+          <div class="skills-titles">
+            <i class="fas fa-laptop-code fa-3x fa-skill"></i>
+            <h3>Projects</h3>
+
+          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur lacus nec tincidunt faucibus.
+            Mauris quis
+            ultricies enim. Donec posuere non nisi ut scelerisque. Curabitur vehicula magna justo, quis vestibulum
+            augue euismod id.</p>
+
+        </div> -->
+      </div>
+
     </div>
 
-
+    <!-- Contact Section -->
 
     <div class="content not-main" id="contact">
-      <h2>You can find me here</h2>
+      <h2>How can I help?</h2>
 
-        <ul class="contact-ul">
-          <li class="contact-li">
-          <a href="mailto:nicolearantes@live.com"><i class="icon far fa-envelope"></i> <span class="full">nicolearantes@live.com</span><span class="short">Email</span></a>
-          </li>
-
-          <li class="contact-li">
-          <a href="https://www.linkedin.com/in/nicolearantes/" target="_blank"><i class="icon fab fa-linkedin"></i> <span>Linkedin</span></a>
-          </li>
-
-          <li class="contact-li">
-          <a href="https://github.com/nicolearantes" target="_blank"><i class="icon fab fa-github"></i> <span>GitHub</span></a>
-          </li>
-        </ul>
+      <div class="contact-contain">
+        <p>I'm avaiable to a new job oportunity.</p>
+        <p>If you'd like to know more about my work, please get in touch.</p>
+        <p>I'll be happy to answer.</p>
+      </div>
+      <button type="button" class="btn btn-outline-secondary"><a href="mailto:nicolearantes@live.com"> Contact
+          Me</a></button>
 
     </div>
 
 
-<!-- Home container -->
-    <div class="content selected home-container" id="main">
-      <ul class="rainbow">
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-        <li>Nicole Arantes</li>
-      </ul>
-    </div>
+    <!-- Footer Section -->
 
     <footer>
+
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/nicolearantes/" target="_blank"><i
+            class="icon fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/nicolearantes" target="_blank"><i class="icon fab fa-github fa-lg"></i></a>
+        <a href="https://www.freecodecamp.org/nicolearantes"><i class="fab fa-free-code-camp fa-lg"></i></a>
+      </div>
+
       <p class="copyright">Made with <b>♡</b> by ©Nicole Arantes</p>
+
     </footer>
-  </section>
+    </section>
 
 
-  <script type="text/javascript" src="index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+  </div>
+
 </body>
+
+</html>
