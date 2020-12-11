@@ -1,0 +1,290 @@
+body {
+    background-color:black;
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-family: 'Faster One', cursive;
+    margin: 0;
+    padding: 8px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.close-button {
+    cursor: pointer;
+    float: right;
+}
+
+/* Header Component*/
+
+.header {
+    background-color: white;
+    padding: 10px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.header-link {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.logo {
+    color:black;
+    font-family: 'Faster One', cursive;
+    left: 50px;
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+}
+
+.box {
+    padding-left: 20px;
+    transform: rotate(25deg);
+}
+
+/* App Component */
+.app {
+    padding-bottom: 20px;
+}
+.app-text {
+    padding: 0 20px;
+}
+
+.play {
+    background-color: #39FF14;
+    border-color: #556052;
+    border-style: inset;
+    cursor: pointer;
+    font-family: 'Faster One', cursive;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.restart {
+    background-color: purple;
+}
+
+.alert {
+    color:#FF329D;
+    font-size: 20px;
+}
+
+.choose {
+    display: flex;
+}
+
+.fish {
+    background-color: black;
+    position:relative;
+    transition:top 3000s linear; 
+}
+
+.fish-map {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* RaceComponent */
+
+.race {
+    background-color: white;
+    background-image: url(img/race.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CounterComponent */
+
+.counter {
+    background-color: rgb(255,0,0);
+    border-radius: 20px; 
+    bottom: 40%;
+    font-size: 40px;
+    height: 230px;
+    justify-self: center;
+    left: 35%;
+    margin: -25px 0 0 -25px;
+    max-width: 50%;
+    padding: 10px;
+    position: absolute;
+    top:20%;
+    transition: opacity 1s, visibility 0s linear 1s;
+    right: 20%;
+    width: 250px;
+    z-index: 1;
+}
+
+.above {
+    position: absolute;
+    background-color: white;
+}
+
+/* Instruction Component */
+
+.instruction {
+    background-color: #FF329D;
+    padding: 10px 10px 50px 10px;
+}
+
+.instructions-title {
+    margin-top: 0;
+}
+
+.cat-instruction-img {
+    height: auto;
+    width: 30%;
+}
+
+.cat-tail {
+    position:relative ;
+}
+
+.cat-paw {
+    position: relative;
+}
+
+@media only screen and (max-width: 708px) {
+     .cat-instruction-img {
+    height: auto;
+    width: 50%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+     .cat-instruction-img {
+    height: auto;
+    width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 414px) {
+    .cat-instruction-img {
+    height: auto;
+    width: 80%;
+    }
+}
+
+
+/* FishComponent */
+
+.fish-card {
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    max-width: 300px;
+    padding: 5px;
+    text-align: center;
+    width: 70vw;
+}
+
+@keyframes up-down {
+    from {transform: rotateY(180deg) rotate(-5deg);}
+    to {transform: rotateY(180deg) rotate(5deg);}
+}
+
+.fish-img.race-fish {
+    animation-name: up-down;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    height: auto;
+    left: 0;
+    max-width: 100px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    position: relative;
+    transition-timing-function: ease-in-out;
+    transition-property: left;
+    width: 22%;
+}
+
+
+@keyframes rotate-on {
+  from {transform: rotateY(180deg);}
+  to {transform: rotateY(540deg);}
+}
+
+.fish-card:hover img, .fish-card.selected img {
+    animation-name: rotate-on;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fish-img {
+    height: 200px;
+    transform: rotateY(180deg);
+    width: 200px;
+}
+
+.plus-class {
+    align-items: center;
+    display: inline-flex;
+    padding-right: 10px;
+}
+
+.calc {
+    border: none;
+    cursor: pointer;
+    margin-top: 0px;
+    margin: 10px;
+}
+
+.calc-icon {
+    background-color:white;
+    border-radius: 50px;
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+
+.win-or-lose {
+    background-color: #FF329D;
+    height: 100%;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.fish-card h1 {
+    height: 2em;
+}
+
+.app-text h2 {
+    margin-bottom: 0;
+}
+
+.app-text p {
+    margin-top: 0;
+}
+
+/* MyBets Component */
+
+.my-bets {
+    background-color: white;
+    color: #FF329D;
+}
+
+.fa-crown {
+    padding-right: 10px;
+}
