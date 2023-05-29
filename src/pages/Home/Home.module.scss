@@ -1,0 +1,61 @@
+.homewrapper {
+    position: relative;
+}
+
+.firstPart {
+    width: 100%;
+    height: auto;
+}
+
+.socialMedia {
+    fill:aqua;
+}
+
+.icons {
+    color: aqua;
+}
+
+.titleText {
+    position: absolute;
+    bottom: 207px;
+    left: 178px;
+}
+
+.introduction {
+    display: flex;
+}
+.video {
+    height: 170px;
+    width: 110px;
+    background-color: black;
+}
+
+.homewrapper {
+    .title {
+        font-size: 5rem;
+        margin-bottom: 0px;
+        color: #F8E3E1;
+    }
+
+    .subtitle {
+        font-weight: 300;
+        font-size: 2rem;
+        margin-top: 0px;
+        color: #F8E3E1;
+    }
+}
+
+.introductionPictures {
+    height: 76px;
+    width: 76px;
+    background-color: black;
+    margin-left: 10px;
+}
+
+.imagesWrapper {
+    display: flex;
+}
+
+.contactWrapper {
+    display: flex;
+}
