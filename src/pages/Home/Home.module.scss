@@ -1,61 +1,129 @@
-.homewrapper {
-    position: relative;
+.homeWrapper {
+  max-width: calc(1400px + 5rem);
+  padding: 0 2rem;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+
+  @media only screen and (max-width: 425px) {
+    padding: 0 0.5rem;
+  }
 }
 
-.firstPart {
-    width: 100%;
-    height: auto;
+.introWrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media only screen and (min-width: 797px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.textWrapper {
+  $left: 30%;
+  $top: 70px;
+
+  background-color: #F8EDEC;
+  margin-left: $left;
+  margin-top: $top;
+
+  .text {
+    position: relative;
+    right: $left;
+    bottom: $top;
+    display: flex;
+    gap: 10px;
+    color: #494040;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 8rem;
+    margin: 0;
+
+    @media only screen and (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  .description {
+    font-size: 24px;
+
+    @media only screen and (min-width: 797px) {
+      max-width: 70%;
+    }
+
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.imgWrapper {
+  row-gap: 20px;
+}
+
+//// Hey i just meet you part
+.contactWrapper {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  color: #494040;
+
+  @media only screen and (max-width: 797px) {
+    flex-direction: column;
+  }
+}
+
+.contactTitle {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+
+  @media only screen and (min-width: 797px) {
+    display: inline-block;
+    max-width: min-content;
+    font-size: 4rem;
+  }
+}
+
+.contactText {
+  max-width: 550px;
+  position: relative;
+  font-size: 24px;
+
+  @media only screen and (max-width: 797px) {
+    font-size: 18px;
+  }
+
+  @media only screen and (min-width: 797px) {
+    left: 26%;
+  }
+}
+
+.iconsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .socialMedia {
-    fill:aqua;
+  color: #494040;
 }
 
-.icons {
-    color: aqua;
+
+.socialMedia:hover {
+  cursor: pointer;
+  color: #F8EDEC;
 }
 
-.titleText {
-    position: absolute;
-    bottom: 207px;
-    left: 178px;
+.footer {
+  text-align: center;
+  font-size: 18px;
+
+  @media only screen and (max-width: 425px) {
+    font-size: 14px;
+  }
 }
 
-.introduction {
-    display: flex;
-}
-.video {
-    height: 170px;
-    width: 110px;
-    background-color: black;
-}
-
-.homewrapper {
-    .title {
-        font-size: 5rem;
-        margin-bottom: 0px;
-        color: #F8E3E1;
-    }
-
-    .subtitle {
-        font-weight: 300;
-        font-size: 2rem;
-        margin-top: 0px;
-        color: #F8E3E1;
-    }
-}
-
-.introductionPictures {
-    height: 76px;
-    width: 76px;
-    background-color: black;
-    margin-left: 10px;
-}
-
-.imagesWrapper {
-    display: flex;
-}
-
-.contactWrapper {
-    display: flex;
-}
