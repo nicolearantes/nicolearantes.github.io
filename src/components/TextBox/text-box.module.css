@@ -1,0 +1,18 @@
+.wrapper {
+    height: 500px;
+    background-color: #c0c0c0;
+    padding: 20px;
+    border: thick solid #dfdfdf;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    box-shadow: -10px 7px 20px -1px #000;
+    overflow-y: scroll;
+    scrollbar-color: blue grey;
+    max-width: 1000px;
+}
+
+.title {
+    background-color: aqua;
+    padding: 5px;
+    color: blue;
+}
