@@ -3,7 +3,7 @@ import style from './text-box.module.css'
 export default function TextBox() {
   return (
     <section className={style.wrapper}>
-      <h4 className={style.title}> About me </h4>
+      <h4 className={style.title}> Summary </h4>
       <p>
         Frontend engineer with 4+ years of experience building responsive, accessible web interfaces within
         cross-functional Agile teams. Skilled in React, TypeScript, and component-based architecture. Comfortable
@@ -19,7 +19,7 @@ export default function TextBox() {
         <li>Others: Scrum, Jira, Contentful, Confluence, Google Analytics, Slack, VWO, Firebase</li>
         <li>Languages: Portuguese (native), English (fluent), German (independent / B1)</li>
       </ul>
-      <h4 className={style.title}> Relevant Experience Summary </h4>
+      <h4 className={style.title}> Relevant Experience </h4>
       <h4> Junior Software Engineer — Gymondo</h4>
       <ul>
         <li>Served as the sole Frontend Engineer in a cross-functional team, delivering and maintaining features of the company’s main web application using React, TypeScript, Redux, and Contentful;</li>
